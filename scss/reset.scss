@@ -1,0 +1,73 @@
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+html {
+    text-size-adjust: none;
+}
+
+/* To ensure links aren't left as default (ugly)! */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Make sure HTML5 elements are behaving */
+article,aside,details,figcaption,figure, footer,header,hgroup,menu,nav,section {
+	display: block;
+}
+
+/* Be gone, evil default bullets */
+nav ul {
+    list-style: none;
+}
+
+/* Fixing ugly default indentation */
+ul, ol {
+    list-style-position: inside;
+}
+
+/* Quote resets */
+blockquote:before, blockquote:after, q:before, q:after {
+    content : '';
+    content : none;
+}
+
+q {
+    quotes : none;
+}
+
+/* Override initial bolding of headings */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+}
+
+/* Padding finally makes sense! */
+*, *:before, *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* Hiding text */
+.hide-text {
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    color: transparent;
+}
+
+/* Clearing floats */
+.group:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
