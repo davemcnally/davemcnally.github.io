@@ -6,7 +6,7 @@ module.exports = function(grunt) {
 
         clean: {
             build: ['build/'],
-            tmp: ['build/css/tmp/']
+            tmp: ['css/tmp/']
         },
 
         sass: {
@@ -15,8 +15,8 @@ module.exports = function(grunt) {
                     style: 'compressed'
                 },
                 files: {
-                    'build/css/tmp/reset.css': 'scss/reset.scss',
-                    'build/css/tmp/main.css': 'scss/main.scss',
+                    'css/tmp/reset.css': 'scss/reset.scss',
+                    'css/tmp/main.css': 'scss/main.scss',
                 },
             },
         },
@@ -47,7 +47,7 @@ module.exports = function(grunt) {
         cssmin: {
             combine: {
                 files: {
-                    'build/css/styles.css': ['build/css/tmp/reset.css', 'build/css/tmp/main.css']
+                    'css/styles.css': ['css/tmp/reset.css', 'css/tmp/main.css']
                 },
             },
         },
