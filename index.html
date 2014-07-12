@@ -1,0 +1,13 @@
+---
+layout: default
+---
+
+{% for post in site.posts limit: 1 %}
+
+        <article>
+            <h1><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h1>
+            <p class="post_meta">Published <time datetime="{{ post.date }}">{{ post.date | date_post }}</time> &amp; tagged with: {{ post.tags | join: ', ' }}</p>
+            {{ post.content }}
+        </article>
+
+{% endfor %}
