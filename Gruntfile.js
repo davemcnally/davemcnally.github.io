@@ -52,6 +52,7 @@ module.exports = function(grunt) {
             },
         },
 
+        /*
         uglify: {
             options: {
                 mangle: false
@@ -62,6 +63,7 @@ module.exports = function(grunt) {
                 },
             },
         },
+        */
 
         jekyll: {
             dev: {
@@ -85,6 +87,6 @@ module.exports = function(grunt) {
 
     });
 
-    grunt.registerTask('build', ['jekyll:dev', 'sass', 'cssmin', 'clean:tmp', 'uglify']);
+    grunt.registerTask('build', ['jekyll:dev', 'sass', 'cssmin', 'clean:tmp']);
     grunt.registerTask('default', ['imageoptim', 'build']);
 };
