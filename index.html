@@ -6,7 +6,7 @@ layout: default
 
         <article>
             <h1><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h1>
-            <p class="post_meta">Published <time datetime="{{ post.date }}">{{ post.date | date_post }}</time> &amp; tagged with: {{ post.tags | join: ', ' }}</p>
+            <p class="post_meta">Published <time datetime="{{ post.date }}">{{ post.date | date: "%-d %B %Y"}}</time> &amp; tagged with: {{ post.tags | join: ', ' }}</p>
             {{ post.content }}
         </article>
 
