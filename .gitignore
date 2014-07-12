@@ -1,1 +1,10 @@
-_site/
+.DS_Store
+*.sublime-project
+*.sublime-workspace
+.bundle
+.sass-cache
+vendor
+node_modules
+build
+npm-debug.log
+Gemfile.lock
