@@ -5,5 +5,5 @@ redcarpet:
     extensions: ['autolink', 'lax_spacing', 'no_intra_emphasis']
 permalink: /:title
 exclude: [node_modules, scss, Gruntfile.js, LICENSE, package.json, README.md, js, Gemfile, Gemfile.lock, vendor, CNAME]
-url: 'http://localhost:4000'
+url: 'http://davemcnally.me'
 name: 'Dave McNally'
