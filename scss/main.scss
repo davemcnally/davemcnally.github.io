@@ -1,6 +1,10 @@
+$offwhite: #f6f6f6;
+$offblack: #313131;
+$feintblack: #515151;
+
 body {
-    background: #f6f6f6;
-    color: #313131;
+    background: $offwhite;
+    color: $offblack;
     font-family: "FreightSans", Helvetica, Arial, serif;
     line-height: 1.4;
 }
@@ -15,8 +19,8 @@ header {
     background: url(../images/header_bg.png);
     background-size: cover;
     background-position: center center;
-    padding: 140px 0 80px;
-    color: #f6f6f6;
+    padding: 140px 0 40px;
+    color: $offwhite;
 }
 
 .logo {
@@ -27,6 +31,7 @@ header {
 header ul {
     list-style: none;
     max-width: 280px;
+    margin-top: 60px;
 }
 
 header ul li {
@@ -37,6 +42,13 @@ header ul li {
 header ul li:last-child {
     margin-right: 0;
 }
+
+.icon_twitter path { fill: #1DB0ED; }
+.icon_dribbble path { fill: #EA4C89; }
+.icon_github path { fill: $offwhite; }
+.icon_twitch path { fill: #6441A4; }
+.icon_steam path { fill: $offwhite; }
+.icon_xbox path { fill: #107C11; }
 
 article {
     padding: 80px 0;
@@ -59,7 +71,7 @@ h1 {
 }
 
 .post_meta, .post_tags {
-    color: #515151;
+    color: $feintblack;
     font-size: 14px;
 }
 
