@@ -70,6 +70,20 @@ h1 {
     margin-bottom: 5px;
 }
 
+article p {
+    text-align: justify;
+    text-justify: newspaper;
+    margin-bottom: 20px;
+}
+
+article p:last-child {
+    margin-bottom: 0;
+}
+
+article ul, article ol, article blockquote {
+    margin-bottom: 20px;
+}
+
 .post_meta, .post_tags {
     color: $feintblack;
     font-size: 14px;
