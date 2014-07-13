@@ -6,7 +6,7 @@ module.exports = function(grunt) {
 
         clean: {
             build: ['build/'],
-            tmp: ['css/tmp/']
+            tmp: ['css/tmp/', 'build/css/tmp/']
         },
 
         sass: {
@@ -33,11 +33,11 @@ module.exports = function(grunt) {
 
         watch: {
             jekyll: {
-                files: ['**/*', '!build/**/*', '!node_modules/**/*'],
+                files: ['**/*', '!build/**/*', '!node_modules/**/*', '!css/**/*'],
                 tasks: ['build']
             },
             livereload: {
-                files: ['build/**/*'],
+                files: ['build/**/*', 'css/styles.css'],
                 options: {
                     livereload: true
                 },
@@ -87,6 +87,6 @@ module.exports = function(grunt) {
 
     });
 
-    grunt.registerTask('build', ['jekyll:dev', 'sass', 'cssmin', 'clean:tmp']);
+    grunt.registerTask('build', ['sass', 'cssmin', 'jekyll:dev', 'clean:tmp']);
     grunt.registerTask('default', ['imageoptim', 'build']);
 };
