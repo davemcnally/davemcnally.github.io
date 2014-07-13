@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.0.4 (8054) - http://www.bohemiancoding.com/sketch -->
+    <title>Twitch</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Desktop-HD" sketch:type="MSArtboardGroup" transform="translate(-179.000000, -74.000000)" fill="#353535">
+            <path d="M190.977835,101.151515 L190.977835,97.3724901 L184,97.3724901 L184,76.9090909 L208,76.9090909 L208,92.4492697 L203.009507,97.3127499 L195.028946,97.3127499 L190.977835,101.151515 Z M179,79.8742713 L179,102.150095 L187.063331,102.150095 L187.063331,106 L192.037725,106 L195.979313,102.128208 L201.962518,102.128208 L211,93.391918 L211,74 L181.043561,74 L179,79.8742713 Z M192,82.7272727 L192,91.4545455 L195,91.4545455 L195,82.7272727 L192,82.7272727 Z M200,82.7272727 L200,91.4545455 L203,91.4545455 L203,82.7272727 L200,82.7272727 Z" id="Twitch" sketch:type="MSShapeGroup"></path>
+        </g>
+    </g>
+</svg>
