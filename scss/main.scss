@@ -1,11 +1,60 @@
+body {
+    background: #f6f6f6;
+    color: #313131;
+    font-family: "FreightSans", Helvetica, Arial, serif;
+    line-height: 1.4;
+}
+
 .wrap {
     width: 87.5%;
     max-width: 800px;
     margin: 0 auto;
 }
 
+header {
+    background: url(../images/header_bg.png);
+    background-size: cover;
+    background-position: center center;
+    padding: 140px 0 80px;
+    color: #f6f6f6;
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 32px;
+}
+
 article {
-    margin: 40px 0;
+    padding: 80px 0;
+    border-top: 1px solid rgba(255, 255, 255, 1);
+    border-bottom: 1px solid rgba(0, 0, 0, .10);
+}
+
+article:first-of-type {
+    border-top: none;
+}
+
+article:last-of-type {
+    border-bottom: none;
+}
+
+h1 {
+    font-weight: 600;
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.post_meta, .post_tags {
+    color: #515151;
+    font-size: 14px;
+}
+
+.post_meta {
+    margin-bottom: 20px;
+}
+
+.post_tags {
+    margin-top: 20px;
 }
 
 article img {
