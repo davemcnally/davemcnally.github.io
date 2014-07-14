@@ -80,9 +80,14 @@ article ul, article ol {
 
 article blockquote {
     margin-left: 20px;
+    margin-right: 20px;
     padding-left: 20px;
     border-left: 4px solid $feintblack;
     font-style: italic;
+}
+
+article blockquote p {
+    text-align: left;
 }
 
 .post_meta {
