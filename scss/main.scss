@@ -61,7 +61,7 @@ h1 {
 article p {
     text-align: justify;
     text-justify: newspaper;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 article p:last-child {
@@ -69,7 +69,20 @@ article p:last-child {
 }
 
 article ul, article ol, article blockquote {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    font-size: 16px;
+    color: $feintblack;
+}
+
+article ul, article ol {
+    margin-left: 20px;
+}
+
+article blockquote {
+    margin-left: 20px;
+    padding-left: 20px;
+    border-left: 4px solid $feintblack;
+    font-style: italic;
 }
 
 .post_meta {
