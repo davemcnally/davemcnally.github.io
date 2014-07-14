@@ -124,14 +124,16 @@ article img {
     border-top: 1px solid rgba(255, 255, 255, 1);
 }
 
+.inner .pagination a {
+    text-decoration: none;
+}
+
 .pagination_newer {
     float: left;
-    width: 50%;
 }
 
 .pagination_older {
     float: right;
-    width: 50%;
     text-align: right;
 }
 
