@@ -6,6 +6,7 @@ body {
     background: $offwhite;
     color: $offblack;
     font-family: "freight-sans-pro-1", "freight-sans-pro-2", "FreightSans", Avenir Next, Avenir, sans-serif;
+    font-size: 20px;
     line-height: 1.4;
 }
 
@@ -25,7 +26,13 @@ header {
 
 .logo {
     font-weight: 700;
-    font-size: 32px;
+    font-size: 36px;
+}
+
+header p {
+    font-size: 22px;
+    color: $offwhite;
+    margin-top: 20px;
 }
 
 article {
@@ -44,8 +51,8 @@ article:last-of-type {
 
 h1 {
     font-weight: 600;
-    font-size: 24px;
-    margin-bottom: 5px;
+    font-size: 28px;
+    margin-bottom: 40px;
 }
 
 article p {
@@ -62,17 +69,17 @@ article ul, article ol, article blockquote {
     margin-bottom: 20px;
 }
 
-.post_meta, .post_tags {
+.post_meta {
     color: $feintblack;
     font-size: 14px;
-}
-
-.post_meta {
-    margin-bottom: 20px;
+    text-transform: uppercase;
+    margin-bottom: 0;
 }
 
 .post_tags {
     margin-top: 20px;
+    color: $feintblack;
+    font-size: 16px;
 }
 
 article img {
