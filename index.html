@@ -5,7 +5,7 @@ layout: default
 {% for post in site.posts reversed limit: 10 %}
 
         <article>
-            <p class="post_meta">Published <time datetime="{{ post.date }}">{{ post.date | date: "%-d %B %Y"}}</time></p>
+            <p class="post_meta"><time datetime="{{ post.date }}">{{ post.date | date: "%-d %B %Y"}}</time></p>
             <h1><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h1>
             {{ post.content }}
             <p class="post_tags">Tagged with: {{ post.tags | join: ', ' }}</p>
