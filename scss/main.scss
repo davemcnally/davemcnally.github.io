@@ -1,6 +1,7 @@
 $offwhite: #f6f6f6;
 $offblack: #313131;
 $feintblack: #515151;
+$serif: "ff-tisa-web-pro-1", "ff-tisa-web-pro-2", Cambria, Georgia, serif;
 
 body {
     background: $offwhite;
@@ -27,6 +28,7 @@ header {
 .logo {
     font-weight: 700;
     font-size: 36px;
+    font-family: $serif;
 }
 
 header p {
@@ -50,9 +52,10 @@ article:last-of-type {
 }
 
 h1 {
-    font-weight: 600;
-    font-size: 28px;
+    font-weight: 700;
+    font-size: 24px;
     margin-bottom: 40px;
+    font-family: $serif;
 }
 
 article p {
@@ -71,9 +74,10 @@ article ul, article ol, article blockquote {
 
 .post_meta {
     color: $feintblack;
-    font-size: 14px;
+    font-size: 12px;
     text-transform: uppercase;
     margin-bottom: 0;
+    font-family: $serif;
 }
 
 .post_tags {
