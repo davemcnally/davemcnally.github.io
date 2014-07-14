@@ -1,5 +1,5 @@
 site_name: 'Dave McNally'
-description: 'My Random Thoughts & Rants.'
+description: 'Carp catching, coffee drinking, game playing, MMA loving designer and developer.'
 markdown: redcarpet
 redcarpet:
     extensions: ['autolink', 'lax_spacing', 'no_intra_emphasis']
