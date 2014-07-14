@@ -1,6 +1,7 @@
 $offwhite: #f6f6f6;
 $offblack: #313131;
 $feintblack: #515151;
+$mainlink: #46963D;
 $serif: "ff-tisa-web-pro-1", "ff-tisa-web-pro-2", Cambria, Georgia, serif;
 
 body {
@@ -15,6 +16,11 @@ body {
     width: 87.5%;
     max-width: 800px;
     margin: 0 auto;
+}
+
+.inner a {
+    color: $mainlink;
+    text-decoration: underline;
 }
 
 header {
@@ -47,15 +53,16 @@ article:first-of-type {
     border-top: none;
 }
 
-article:last-of-type {
-    border-bottom: none;
-}
-
 h1 {
     font-weight: 700;
     font-size: 24px;
     margin-bottom: 40px;
     font-family: $serif;
+}
+
+.inner h1 a {
+    color: $offblack;
+    text-decoration: none;
 }
 
 article p {
@@ -106,7 +113,35 @@ article blockquote p {
 
 article img {
     max-width: 100%;
+    width: 100%;
     height: auto;
+}
+
+.pagination {
+    font-size: 16px;
+    color: $feintblack;
+    padding: 80px 0;
+    border-top: 1px solid rgba(255, 255, 255, 1);
+}
+
+.pagination_newer {
+    float: left;
+    width: 50%;
+}
+
+.pagination_older {
+    float: right;
+    width: 50%;
+    text-align: right;
+}
+
+.page_number {
+    display: inline-block;
+    float: left;
+    width: 30%;
+    text-align: center;
+    font-size: 12px;
+    line-height: 1.7;
 }
 
 footer {

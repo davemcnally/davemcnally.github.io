@@ -2,7 +2,7 @@
 layout: default
 ---
 
-{% for post in site.posts limit: 10 %}
+{% for post in paginator.posts %}
 
         <article>
             <p class="post_meta"><time datetime="{{ post.date }}">{{ post.date | date: "%-d %B %Y"}}</time></p>
@@ -12,3 +12,23 @@ layout: default
         </article>
 
 {% endfor %}
+
+{% if paginator.total_pages > 1 %}
+    <div class="pagination">
+        {% if paginator.previous_page %}
+            <a class="pagination_newer" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&lang; Newer Posts</a>
+        {% else %}
+            <span class="pagination_newer">No Newer Posts</span>
+        {% endif %}
+
+        <!--
+        <span class="page_number">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
+        -->
+
+        {% if paginator.next_page %}
+            <a class="pagination_older" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Posts &rang;</a>
+        {% else %}
+            <span class="pagination_older">No Older Posts</span>
+        {% endif %}
+    </div>
+{% endif %}

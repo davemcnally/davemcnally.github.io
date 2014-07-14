@@ -7,3 +7,4 @@ permalink: /:title
 exclude: [node_modules, scss, Gruntfile.js, LICENSE, package.json, README.md, js, Gemfile, Gemfile.lock, vendor, CNAME]
 url: 'http://davemcnally.me'
 name: 'Dave McNally'
+paginate: 10
