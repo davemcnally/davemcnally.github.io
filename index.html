@@ -2,7 +2,7 @@
 layout: default
 ---
 
-{% for post in site.posts reversed limit: 10 %}
+{% for post in site.posts limit: 10 %}
 
         <article>
             <p class="post_meta"><time datetime="{{ post.date }}">{{ post.date | date: "%-d %B %Y"}}</time></p>
