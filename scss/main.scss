@@ -117,11 +117,24 @@ article img {
     height: auto;
 }
 
+.highlight {
+    overflow: scroll;
+    background: $feintblack;
+    padding: 20px;
+}
+
 .pagination {
     font-size: 16px;
     color: $feintblack;
     padding: 80px 0;
     border-top: 1px solid rgba(255, 255, 255, 1);
+}
+
+.inner code {
+    background: $feintblack;
+    color: $offwhite;
+    font-size: 14px;
+    padding: 5px 10px;
 }
 
 .inner .pagination a {
