@@ -118,9 +118,9 @@ article img {
 }
 
 .highlight {
-    overflow: scroll;
     background: $feintblack;
     padding: 20px;
+    line-height: 1;
 }
 
 .pagination {
@@ -135,6 +135,11 @@ article img {
     color: $offwhite;
     font-size: 14px;
     padding: 5px 10px;
+}
+
+.inner pre {
+    overflow-x: auto;
+    overflow-y: hidden 
 }
 
 .inner .pagination a {
