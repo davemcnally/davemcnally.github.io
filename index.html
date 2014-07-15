@@ -16,7 +16,7 @@ layout: default
 {% if paginator.total_pages > 1 %}
     <div class="pagination">
         {% if paginator.previous_page %}
-            <a class="pagination_newer" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&lt; Newer Posts</a>
+            <a class="pagination_newer" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">Newer Posts &gt; </a>
         {% else %}
             <span class="pagination_newer">No Newer Posts</span>
         {% endif %}
@@ -26,7 +26,7 @@ layout: default
         -->
 
         {% if paginator.next_page %}
-            <a class="pagination_older" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Posts &gt;</a>
+            <a class="pagination_older" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">&lt; Older Posts</a>
         {% else %}
             <span class="pagination_older">No Older Posts</span>
         {% endif %}
