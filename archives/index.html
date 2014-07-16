@@ -1,0 +1,46 @@
+---
+layout: page
+title: "Archives"
+---
+
+<div class="topic web">
+    <h2>All of my web related posts</h2>
+    <ul>
+        {% for post in site.posts %}
+        {% if post.tags contains 'web' %}
+            <li>
+                <p class="post_meta"><time datetime="{{ post.date }}">{{ post.date | date: "%-d %B %Y"}}</time></p>
+                <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+            </li>
+        {% endif %}
+        {% endfor %}
+    </ul>
+</div>
+
+<div class="topic gaming">
+    <h2>All of my gaming posts</h2>
+    <ul>
+        {% for post in site.posts %}
+        {% if post.tags contains 'gaming' %}
+            <li>
+                <p class="post_meta"><time datetime="{{ post.date }}">{{ post.date | date: "%-d %B %Y"}}</time></p>
+                <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+            </li>
+        {% endif %}
+        {% endfor %}
+    </ul>
+</div>
+
+<div class="topic fishing">
+    <h2>All of my fishing posts</h2>
+    <ul>
+        {% for post in site.posts %}
+        {% if post.tags contains 'carp' %}
+            <li>
+                <p class="post_meta"><time datetime="{{ post.date }}">{{ post.date | date: "%-d %B %Y"}}</time></p>
+                <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+            </li>
+        {% endif %}
+        {% endfor %}
+    </ul>
+</div>
