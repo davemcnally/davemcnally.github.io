@@ -80,7 +80,8 @@ module.exports = function(grunt) {
                 options: {
                     keepalive: true,
                     port: 4000,
-                    base: 'build'
+                    base: 'build',
+                    open: true
                 }
             }
         },
