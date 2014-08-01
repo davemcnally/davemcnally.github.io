@@ -71,6 +71,12 @@ h1 {
     font-family: $serif;
 }
 
+h2 {
+    font-weight: 600;
+    font-size: 22px;
+    margin-bottom: 40px;
+}
+
 article p {
     text-align: justify;
     text-justify: newspaper;
@@ -301,6 +307,9 @@ footer ul li:last-child {
     }
     h1, .topic ul li a {
         font-size: 38px;
+    }
+    h2 {
+        font-size: 32px;
     }
     .post_meta {
         font-size: 14px;
