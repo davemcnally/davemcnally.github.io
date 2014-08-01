@@ -119,6 +119,38 @@ article img {
     height: auto;
 }
 
+article .twitter-button img {
+    width: 32px;
+    max-width: 32px;
+    height: 32px;
+
+}
+
+article a.twitter-button {
+    color: $offwhite;
+}
+
+.twitter-button {
+    background: $mainlink;
+    border-radius: 6px;
+    padding: 10px 15px;
+    display: inline-block;
+    line-height: 1;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.twitter-button span {
+    padding-top: 10px;
+    float: left;
+}
+
+.twitter-button img {
+    float: left;
+    margin-right: 15px;
+}
+
 .videowrap {
     position: relative;
     padding-bottom: 56.25%; /* 16:9 */

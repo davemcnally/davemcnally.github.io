@@ -9,6 +9,9 @@ layout: default
             <h1><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h1>
             {{ post.content }}
             <p class="post_tags">Tagged with: {{ post.tags | join: ', ' }}</p>
+
+            <a class="twitter-button group" href="https://twitter.com/intent/tweet?original_referer={{ site.url }}{{ post.url }}&text=Reading:%20{{ post.title }}&tw_p=tweetbutton&url={{ site.url }}{{ post.url }}&via=davemcnally"><img src="{{ site.url }}/images/tweet.svg" width="32" height="32" alt="Twitter Icon" /><span>Share Me On Twitter!</span></a>
+
         </article>
 
 {% endfor %}
