@@ -18,6 +18,10 @@ body {
     margin: 0 auto;
 }
 
+.strike {
+    text-decoration: line-through;
+}
+
 .inner a {
     color: $mainlink;
 }
