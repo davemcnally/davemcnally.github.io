@@ -46,6 +46,10 @@ header p {
     margin-top: 20px;
 }
 
+header p a {
+    color: $mainlink;
+}
+
 #filter {
     padding: 40px 0;
 }
